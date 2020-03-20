@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/ico" href="images/sc-icon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        .front {
+            background-color: #ffffff;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            min-height: 500px;
+        }
+        .innerJumbo {
+            margin: 6em auto;
+            /*padding: 2em;*/
+            opacity: 0.9;
+            background-color: black;
+        }
+        .switHead {
+            font-size:4vw; 
+            font-weight:900; 
+            color: #ffffff;
+        }
+        .switHeadSub {
+            padding-top: 0.2em; 
+            font-size: 20px; 
+            color: #ffffff;
+        }
+        .switBtn {
+            background-color:#ffffff;
+        }
+        #getCurrencyTo {
+            color: #2c2c2c;
+        }
+        #getCurrencyFrom {
+            color: #2c2c2c;
+        }
+        #getAmount {
+            color: #2c2c2c;
+        }
+        #showConversion {
+            color: #2c2c2c;
+        }
+        #error {
+            color: yellow;
+            padding-left: 2em;
+        }
+    </style>
+</head>
+<body>
+    <!--Body Container-->
+    <div class="container-fluid front">
+        <div class="row">
+            <div class="jumbotron text-center innerJumbo">
+                <h2 class="switHead">Naira Converter</h2>
+                <p class="text-center switHeadSub">Convert your currency.</p>
+                <form action="" method="POST">
+                    <fieldset>
+                        <div class="form-group text-left">
+                            <label for="currency" style="color: #ffffff;">Convert From</label>
+                            <select class="form-control" id="getCurrencyFrom">
+                                <option value="usd">USD</option>
+                                <option value="euro">EURO</option>
+                                <option value="pounds">POUNDS</option>
+                                <option value="ngn" selected>NAIRA</option>
+                            </select>
+                        </div>
+                        <div class="form-group text-left">
+                            <label for="currency" style="color: #ffffff;">Convert to</label>
+                            <select class="form-control" id="getCurrencyTo">
+                                <option value="usd" selected>USD</option>
+                                <option value="euro">EURO</option>
+                                <option value="pounds">POUNDS</option>
+                                <option value="ngn">NAIRA</option>
+                            </select>
+                        </div>
+                      <div class="form-group text-left">
+                        <label for="validationCustom01" style="color: #ffffff;">Conversion Amount</label><span id="error"></span>
+                        <input type="text" name="amount" id="getAmount" class="form-control" placeholder="Amount">
+                      </div>
+                      <div class="form-group text-left">
+                        <label for="validationCustom01" style="color: #ffffff;">Converted Amount</label>
+                        <input type="text" id="showConversion" value="" class="form-control" placeholder="Converted Currency Value" disabled>
+                      </div>
+                    
+                      <button type="submit" onclick="convert_currency(); return false;" class="btn btn-primary">Convert</button>
+                    </fieldset>
+                    
+                </form>
+               
+            </div>
+            
+        </div>
+    </div>
+    <!--Body Container-->
+</body>
+</html>
+<script src="currency-converter.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
