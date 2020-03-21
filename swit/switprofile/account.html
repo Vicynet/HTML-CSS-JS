@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/ico" href="../images/sc-icon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        .front {
+            /*background-image: url("images/swit.jpg");*/
+            background-color: #ffffff;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            min-height: 500px;
+        }
+        .innerJumbo {
+            margin: 6em auto;
+            /*padding: 2em;*/
+            width: 22em;
+            opacity: 0.9;
+            background-color: black;
+        }
+        .switHead {
+            font-size:3rem ; 
+            font-weight:900; 
+            color: #ffffff;
+        }
+        .switHeadSub {
+            padding-top: 0.2em; 
+            font-size: 20px; 
+            color: #ffffff;
+        }
+        .switBtn {
+            background-color:#ffffff;
+        }
+        #getCurrency {
+            color: #2c2c2c;
+        }
+        #getAmount {
+            color: #2c2c2c;
+        }
+        #showConversion {
+            color: #2c2c2c;
+        }
+        #error {
+            color: yellow;
+            padding-left: 2em;
+        }
+    </style>
+</head>
+<body>
+    <!--Body Container-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
+        <a class="navbar-brand" href="#">
+            <img src="../images/sc-Logo.svg" width="150px" height="45px" alt="logo">
+        </a>
+    </nav>
+
+    <div class="container-fluid front">
+        <div class="row">
+            <div class="jumbotron text-center innerJumbo">
+                <h2 class="switHead">Sign in</h2><p></p>
+
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Sign in</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Register</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <form action="" method="POST">
+                        <fieldset>
+                            <p id="loginError" style="color: yellow;"></p>
+                            <div class="form-group text-left">
+                                <label for="validationCustom01" style="color: #ffffff;">Email</label><span id="error"></span>
+                                <input type="text" name="email" value="" id="getEmail" class="form-control" placeholder="Enter Email Address" required>
+                              </div>
+                          <div class="form-group text-left">
+                            <label for="validationCustom01" style="color: #ffffff;">Password</label><span id="error"></span>
+                            <input type="password" name="password" value="" id="getPassword" class="form-control" placeholder="Enter Password" required>
+                          </div>
+                        
+                          <button type="submit" id="btnSub" onclick="login(); return false;" class="btn btn-danger">Sign in</button>
+                        </fieldset>
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <form id="formal">
+                        <fieldset>
+                            <p id="emptyForm" style="color: yellow;"></p>
+                            <div class="form-group text-left">
+                                <label for="validationCustom01" style="color: #ffffff;">Fullname</label>
+                                <input type="text" name="fname"  id="getFname" class="form-control" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group text-left">
+                                <label for="validationCustom01" style="color: #ffffff;">Email</label>
+                                <input type="text" name="email"  id="getEmail" class="form-control" placeholder="johndoe@gmail.com" required>
+                            </div>
+                            <div class="form-group text-left">
+                                <label for="validationCustom01" style="color: #ffffff;">Phone</label>
+
+                                <input type="text" style="width: 10em;" name="phone" value="" id="getPhone" class="form-control" placeholder="07069594950" required>                                
+
+                            </div>
+                    
+                            <div class="form-group text-left">
+                                <label for="validationCustom01" style="color: #ffffff;">Password</label>
+                                <input type="password" name="password"  id="getPassword" class="form-control" placeholder="Enter Password" required>
+                            </div>
+                    
+                            <button type="submit" class="btn btn-danger">Register</button>
+                            <p id="registered" style="color: yellow;"></p>
+                        </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!--Body Container-->
+</body>
+</html>
+<script src="../switjs/account.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
