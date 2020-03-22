@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="icon" type="image/ico" href="../images/sc-icon.ico">
+    <link rel="stylesheet" href="../css/main.css" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <style>
+    <!-- <style>
         .front {
             /*background-image: url("images/swit.jpg");*/
             background-color: #ffffff;
@@ -48,7 +49,7 @@
             color: yellow;
             padding-left: 2em;
         }
-    </style>
+    </style> -->
 </head>
 <body>
     <!--Body Container-->
@@ -58,10 +59,10 @@
         </a>
     </nav>
 
-    <div class="container-fluid front">
+    <div class="container-fluid">
         <div class="row">
-            <div class="jumbotron text-center innerJumbo">
-                <h2 class="switHead">Sign in</h2><p></p>
+            <div class="jumbotron text-center accountJumbo" style="background-color: black;">
+                <h2 class="accountTitle">Sign in</h2><p></p>
 
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item">
@@ -77,11 +78,11 @@
                         <fieldset>
                             <p id="loginError" style="color: yellow;"></p>
                             <div class="form-group text-left">
-                                <label for="validationCustom01" style="color: #ffffff;">Email</label><span id="error"></span>
+                                <label for="validationCustom01" id="accountForm">Email</label><span id="error"></span>
                                 <input type="text" name="email" value="" id="getEmail" class="form-control" placeholder="Enter Email Address" required>
                               </div>
                           <div class="form-group text-left">
-                            <label for="validationCustom01" style="color: #ffffff;">Password</label><span id="error"></span>
+                            <label for="validationCustom01" id="accountForm">Password</label><span id="error"></span>
                             <input type="password" name="password" value="" id="getPassword" class="form-control" placeholder="Enter Password" required>
                           </div>
                         
@@ -94,22 +95,22 @@
                         <fieldset>
                             <p id="emptyForm" style="color: yellow;"></p>
                             <div class="form-group text-left">
-                                <label for="validationCustom01" style="color: #ffffff;">Fullname</label>
+                                <label for="validationCustom01" id="accountForm">Fullname</label>
                                 <input type="text" name="fname"  id="getFname" class="form-control" placeholder="John Doe" required>
                             </div>
                             <div class="form-group text-left">
-                                <label for="validationCustom01" style="color: #ffffff;">Email</label>
+                                <label for="validationCustom01" id="accountForm">Email</label>
                                 <input type="text" name="email"  id="getEmail" class="form-control" placeholder="johndoe@gmail.com" required>
                             </div>
                             <div class="form-group text-left">
-                                <label for="validationCustom01" style="color: #ffffff;">Phone</label>
+                                <label for="validationCustom01" id="accountForm">Phone</label>
 
                                 <input type="text" style="width: 10em;" name="phone" value="" id="getPhone" class="form-control" placeholder="07069594950" required>                                
 
                             </div>
                     
                             <div class="form-group text-left">
-                                <label for="validationCustom01" style="color: #ffffff;">Password</label>
+                                <label for="validationCustom01" id="accountForm">Password</label>
                                 <input type="password" name="password"  id="getPassword" class="form-control" placeholder="Enter Password" required>
                             </div>
                     

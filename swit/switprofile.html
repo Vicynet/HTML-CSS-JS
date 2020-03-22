@@ -5,50 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SWIT AFRICA - PROFILES</title>
     <link rel="icon" type="image/ico" href="images/sc-icon.ico">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <style>
-        .front {
-            background-image: url("images/swit.jpg");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            min-height: 600px;
-        }
-        .innerJumbo {
-            margin: 10em auto;
-            padding: 2em;
-            opacity: 0.6;
-            background-color: black;
-        }
-        .switHead {
-            font-size:9vw; 
-            font-weight:900; 
-            color: #ffffff;
-        }
-        .switHeadSub {
-            padding-top: 0.2em; 
-            font-size: 20px; 
-            color: #ffffff;
-        }
-        .switBtn {
-            background-color:#fc2d2d;
-        }
-    </style>
 </head>
 <body>
     <!--Body Container-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container-fluid" id="navContainer">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" id="navDesktop">
         <a class="navbar-brand" href="#"><img src="images/sc-Logo.svg" width="150px" height="45px" alt="logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto" style="padding-right: 2.6em">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="switprofile/profile.html">Swit <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="switprofile/profile.html">Swit</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="switblog.html">Blog</a>
@@ -59,15 +33,16 @@
           </ul>
         </div>
     </nav>
+    </div>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-12 text-center" style="padding-top: 4em;">
-                <h2 style="font-weight: bolder;">SWIT Profiles</h2>
+            <div class="col-md-12 text-center" id="afterSlideRow">
+                <h2 id="afterSlideH2">SWIT Profiles</h2>
             </div>
         </div>
     </div>
     <div class="container">
-        <div class="card-deck" style="margin: 2em auto;">
+        <div class="card-deck" id="cardDecker">
             <div class="card">
               <img src="switprofile/images/1.jpg" class="card-img-top"  alt="logo">
               <div class="card-body">
@@ -109,7 +84,7 @@
             </div>
           </div>
 
-          <div class="card-deck" style="margin: 2em auto;">
+          <div class="card-deck" id="cardDecker">
             <div class="card">
               <img src="switprofile/images/1.jpg" class="card-img-top" alt="logo">
               <div class="card-body">
@@ -152,7 +127,7 @@
             </div>
           </div>
 
-          <div class="card-deck" style="margin: 2em auto;">
+          <div class="card-deck" id="cardDecker">
             <div class="card">
               <img src="switprofile/images/1.jpg" class="card-img-top" alt="logo">
               <div class="card-body">
@@ -195,9 +170,9 @@
           </div>
     </div>
     
-    <div class="container-fluid text-center" style="padding: 0em; margin-top: 0em;">
-        <div class="row" style="background-color: #fc2d2d; margin: auto;">
-            <div class="col-md-12" style="padding-top: 2em; padding-bottom: 1em; color: #ffffff;">
+    <div class="container-fluid text-center" id="footerContainer">
+        <div class="row" id="footerRow">
+            <div class="col-md-12" id="footerCol">
                     <p>© 2019 Semicolon Talent Company Ltd. All rights reserved.</p>
             </div>
         </div>
