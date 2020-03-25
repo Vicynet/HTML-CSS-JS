@@ -1,3 +1,6 @@
+var covid_date = new Date();
+document.getElementById("date").innerHTML = covid_date.toDateString();
+
 function login() {
     var emailStore = ["ihedioha.victor@gmail.com", "ayemobolatolulope@gmail.com", "fatunbidavidkayode@gmail.com"];
     var passwordStore = ["12345", "123", "1234"];
