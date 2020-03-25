@@ -1,5 +1,5 @@
         .front {
-            background-image: url("../images/swit.jpg");
+            background-image: url("../images/dash.jpg");
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -21,7 +21,7 @@
             color: #ffffff;
         }
         .switHead {
-            font-size:9vw; 
+            font-size:5vw; 
             font-weight:900; 
             color: #ffffff;
         }
@@ -53,6 +53,7 @@
         }
         #cardStyle {
             padding-top: 2em;
+            padding-bottom: 2em;
         }
         #cardDecker {
             margin: 2em auto;
@@ -61,7 +62,7 @@
             font-weight: bolder;
         }
         #afterSlideRow {
-            padding-top: 4em;
+            padding-top: 1em;
         }
         #accountForm {
             color: #ffffff;
