@@ -32,6 +32,7 @@ const assets = [
   "/images/sc-icon.svg",
   "/images/sc-icon72.png",
   "/images/sc-icon96.png",
+  "/images/sc-icon144.png",
   "/images/self.svg",
   "/images/symptoms.svg",
   "/images/wash.svg",
