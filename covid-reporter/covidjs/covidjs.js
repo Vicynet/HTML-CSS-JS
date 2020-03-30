@@ -1,21 +1,6 @@
 var covid_date = new Date();
 document.getElementById("date").innerHTML = covid_date.toDateString();
 
-function login() {
-    var emailStore = ["ihedioha.victor@gmail.com", "ayemobolatolulope@gmail.com", "fatunbidavidkayode@gmail.com"];
-    var passwordStore = ["12345", "123", "1234"];
-    var email = document.getElementById("getEmail").value;
-    var password = document.getElementById("getPassword").value;
-
-    if((emailStore.includes(email)) && (passwordStore.includes(password))) {
-        alert("Successfully Logged in");
-        window.location = "https://switafrica.netlify.com";
-    }
-    else {
-        document.getElementById("loginError").innerHTML = "Wrong login credentials";
-    }
-}
-
 var request = new XMLHttpRequest()
 
 var death = parseInt(document.getElementById("death").innerHTML)
@@ -39,5 +24,39 @@ request.onload = function() {
 }
 
 request.send()
+
+
+//Create the XHR Object
+// let xhr = new XMLHttpRequest;
+
+//Call the open function, GET-type of request, url, true-asynchronous
+// xhr.open('GET', 'https://covid19-update-api.herokuapp.com/api/v1/ncdc/cases', true)
+//call the onload 
+// xhr.onload = function() 
+    // {
+      // let data = JSON.parse(this.responseText).cases;
+
+        //check if the status is 200(means everything is okay)
+        // if (this.status === 200) 
+    //         {
+    //               document.getElementById("cases").innerHTML = data.total
+    //               document.getElementById("death").innerHTML = data.death
+    //               document.getElementById("recover").innerHTML = data.discharged
+
+    //               var death = parseInt(document.getElementById("death").innerHTML)
+    //               var recovered = parseInt(document.getElementById("recover").innerHTML)
+    //               var all = parseInt(document.getElementById("cases").innerHTML)
+    //               var active = all - (death + recovered)
+    //               document.getElementById("active").innerHTML = active
+               
+    //           } else {
+    //             console.log('error')
+    // }
+    //         }
+//call send
+// xhr.send();
+
+        
+
 
 
